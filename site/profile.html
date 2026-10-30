@@ -1,0 +1,166 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Karla:ital,wght@0,400;0,500;0,700;1,400&family=DM+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#3b3566;--ink2:#6c6596;--paper:#fff8f1;--card:#ffffff;--line:#efe3d6;--coral:#ef8a7c;--mint:#5fb8b0;--lilac:#8b84d4;--gold:#e0a43a;--teal:#5aa6c0}
+html,body{margin:0;background:var(--paper)}
+body{width:1000px;font-family:Karla,sans-serif;color:var(--ink)}
+#hero{position:relative;height:370px;background:linear-gradient(180deg,#f4b9a7 0%,#e8b5c3 55%,#c9bfe6 88%,var(--paper) 100%);overflow:hidden}
+#hero canvas{position:absolute;inset:0}
+.t{position:absolute;left:52px;top:58px;z-index:2}
+.k{font-family:'DM Mono',monospace;font-size:13px;letter-spacing:.24em;color:var(--ink2)}
+h1{font-family:'Josefin Sans',sans-serif;font-weight:300;font-size:60px;letter-spacing:.15em;margin:10px 0 0;line-height:1}
+h1 b{font-weight:600}
+.m{font-family:'DM Mono',monospace;font-size:13px;letter-spacing:.12em;color:var(--ink2);margin-top:14px}
+.wrap{padding:8px 52px 44px}
+.intro{font-size:18px;line-height:1.6;max-width:820px;margin:18px 0 0}
+.intro b{font-weight:700}
+h2{font-family:'Josefin Sans',sans-serif;font-weight:400;font-size:15px;letter-spacing:.32em;text-transform:uppercase;margin:42px 0 16px;display:flex;align-items:center;gap:12px}
+h2 i{width:10px;height:10px;transform:rotate(45deg);background:var(--c)}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.col h3{font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:13px;letter-spacing:.26em;margin:0 0 12px;color:var(--c)}
+.it{margin:0 0 11px}.it b{display:block;font-size:15.5px}.it span{font-size:14px;color:var(--ink2)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;position:relative;box-shadow:0 1px 0 rgba(59,53,102,.04)}
+.card .eb{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;color:var(--ink2);display:flex;gap:8px;align-items:center}
+.card .eb i{width:8px;height:8px;transform:rotate(45deg);background:var(--c)}
+.card h4{font-family:'Josefin Sans',sans-serif;font-weight:400;font-size:24px;letter-spacing:.12em;margin:10px 0 2px;text-transform:uppercase}
+.card .sub{font-style:italic;color:var(--ink2);font-size:14.5px}
+.card p{font-size:14.5px;line-height:1.5;margin:10px 0 12px;max-width:330px}
+.card .met{position:absolute;right:22px;top:20px;text-align:right}
+.card .met b{display:block;font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:28px;color:var(--c)}
+.card .met span{font-family:'DM Mono',monospace;font-size:11px;color:var(--ink2)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}.tags span{font-family:'DM Mono',monospace;font-size:11.5px;color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:3px 10px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.stat b{display:block;font-family:'Josefin Sans',sans-serif;font-weight:600;font-size:30px;font-variant-numeric:tabular-nums}
+.stat span{font-family:'DM Mono',monospace;font-size:11.5px;color:var(--ink2)}
+.tools{display:flex;flex-wrap:wrap;gap:8px}.tools span{font-family:'DM Mono',monospace;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:7px 12px}
+.foot{margin-top:34px;font-family:'DM Mono',monospace;font-size:13px;color:var(--ink2);display:flex;gap:22px;justify-content:center}
+</style></head><body>
+<div id="hero"><div class="t"><div class="k">HELLO, I'M</div><h1>TOBY <b>FANG</b></h1><div class="m">CS @ COLUMBIA ENGINEERING '28 · NEW YORK</div></div></div>
+<div class="wrap">
+<p class="intro">I'm a CS junior at Columbia Engineering who likes building things people actually use. I founded <b>CollegePilot</b>, an AI college counselor with 5K+ weekly users, was a product engineer intern at <b>Claim</b> (~700K MAU), and did LLM research at <b>Vanderbilt</b>. Lately I'm teaching a robot arm to feel through servo current.</p>
+
+<h2 style="--c:var(--coral)"><i></i>About</h2>
+<div class="cols">
+ <div class="col" style="--c:var(--coral)"><h3>NOW</h3>
+  <div class="it"><b>Founder, CollegePilot</b><span>AI college counseling · 5K+ weekly users</span></div>
+  <div class="it"><b>Director of Software Eng</b><span>Columbia Data &amp; Strategy Group</span></div>
+  <div class="it"><b>Robot learning</b><span>SO-101 arm that senses touch via servo current</span></div>
+  <div class="it"><b>Side quest</b><span>an 8-servo bipedal duck in Onshape</span></div></div>
+ <div class="col" style="--c:var(--teal)"><h3>BEFORE</h3>
+  <div class="it"><b>Product Engineer Intern, Claim</b><span>New York · ~700K monthly active users</span></div>
+  <div class="it"><b>Undergraduate Researcher</b><span>Vanderbilt · LLMs with Dr. Jules White</span></div>
+  <div class="it"><b>Engineering Intern, Zoomob</b><span>Hong Kong · TaleCrafter, RAG for writers</span></div>
+  <div class="it"><b>ISEF Finalist</b><span>skateboard trick classifier · 98% accuracy</span></div></div>
+ <div class="col" style="--c:var(--lilac)"><h3>OFF HOURS</h3>
+  <div class="it"><b>Grew up in</b><span>Hong Kong · Guangzhou · Australia</span></div>
+  <div class="it"><b>Speaks</b><span>English · 普通话 · 廣東話</span></div>
+  <div class="it"><b>Plays</b><span>poker · basketball</span></div>
+  <div class="it"><b>Also</b><span>skateboarding · raves</span></div></div>
+</div>
+
+<h2 style="--c:var(--gold)"><i></i>Things I've built</h2>
+<div class="cards">
+ <div class="card" style="--c:var(--coral)"><div class="eb"><i></i>FOUNDER · SINCE 2025</div><h4>CollegePilot</h4><div class="sub">AI college counseling platform</div>
+  <p>RAG over each student's essays and activities (pgvector), A/B-tested funnels, 500K+ UGC views.</p><div class="tags"><span>Next.js</span><span>Postgres</span><span>pgvector</span><span>Stripe</span></div><div class="met"><b>5K+</b><span>weekly users</span></div></div>
+ <div class="card" style="--c:var(--lilac)"><div class="eb"><i></i>INTERVIEW PREP · ONGOING</div><h4>NeetCode</h4><div class="sub">neetcode-submissions</div>
+  <p>Every NeetCode problem I solve, committed as I go: arrays, graphs, trees, DP and more.</p><div class="tags"><span>Python</span><span>DSA</span><span>NeetCode 150</span></div><div class="met"><b>200+</b><span>problems solved</span></div></div>
+ <div class="card" style="--c:var(--teal)"><div class="eb"><i></i>SIDE PROJECT</div><h4>MovieMatch</h4><div class="sub">Tinder, but for movies</div>
+  <p>Swipe to teach it your taste; SBERT embeddings with cosine KNN and a per-genre cap.</p><div class="tags"><span>FastAPI</span><span>Next.js</span><span>SBERT</span></div><div class="met"><b>15K</b><span>movies</span></div></div>
+ <div class="card" style="--c:var(--gold)"><div class="eb"><i></i>SIDE PROJECT</div><h4>StonksGPT</h4><div class="sub">an LLM that trades</div>
+  <p>Researches tickers and places trades through MCP tool calls, containerized end to end.</p><div class="tags"><span>Node</span><span>React</span><span>MCP</span><span>Docker</span></div><div class="met"><b>MCP</b><span>tool calls</span></div></div>
+</div>
+
+<h2 style="--c:var(--mint)"><i></i>This year on GitHub</h2>
+<div class="stats" id="stats"></div>
+
+<h2 style="--c:var(--teal)"><i></i>Tools</h2>
+<div class="tools"><span>Python</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Node</span><span>FastAPI</span><span>PyTorch</span><span>Postgres</span><span>pgvector</span><span>Redis</span><span>Supabase</span><span>Docker</span><span>AWS</span><span>Vercel</span><span>LeRobot</span></div>
+
+<div class="foot"><span>ziyuefang.dev</span><span>collegepilot.app</span><span>ziyue.fang@columbia.edu</span></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const W=1000,H=370,LOOP=6;
+const r=new THREE.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true});
+r.setPixelRatio(window.devicePixelRatio||1); r.setSize(W,H); r.shadowMap.enabled=true; r.shadowMap.type=THREE.PCFSoftShadowMap;
+document.getElementById("hero").appendChild(r.domElement);
+const sc=new THREE.Scene();
+const view=15, a=W/H; const cam=new THREE.OrthographicCamera(-view*a/2,view*a/2,view/2,-view/2,-100,200);
+const dir=new THREE.Vector3(1,0.82,1).normalize(); const tgt=new THREE.Vector3(-9.6,-0.4,-1.6);
+cam.position.copy(tgt).addScaledVector(dir,60); cam.lookAt(tgt);
+sc.add(new THREE.HemisphereLight(0xffffff,0xd6cdea,0.6));
+const sun=new THREE.DirectionalLight(0xfff6ec,0.8); sun.position.set(8,22,14); sun.castShadow=true; sun.shadow.mapSize.set(2048,2048);
+Object.assign(sun.shadow.camera,{left:-12,right:12,top:12,bottom:-12,near:1,far:60}); sun.shadow.bias=-0.0008; sun.shadow.radius=4; sc.add(sun); sc.add(new THREE.AmbientLight(0xffffff,0.12));
+const lam=(c,o={})=>new THREE.MeshLambertMaterial(Object.assign({color:c,flatShading:true},o));
+const lighten=(h,k)=>new THREE.Color(h).lerp(new THREE.Color(0xffffff),k);
+const B=new THREE.BoxGeometry(1,1,1);
+const add=(g,m,x,y,z,sx=1,sy=1,sz=1,p=sc)=>{const o=new THREE.Mesh(g,m);o.position.set(x,y,z);o.scale.set(sx,sy,sz);o.castShadow=true;o.receiveShadow=true;p.add(o);return o};
+const blk=(c,x,y,z,sx,sy,sz,p)=>{const s=lam(c);return add(B,[s,s,lam(lighten(c,0.35)),s,s,s],x,y+sy/2,z,sx,sy,sz,p)};
+const STONE=0xf3e6d6;
+// island
+blk(STONE,0,-1.2,0,8,1.2,6); blk(lighten(0xef8a7c,0.55),0,-0.62,0,8.06,0.08,6.06);
+blk(0xe5d0d6,0,-2.3,0,6.6,1.1,4.8); blk(0xd2c0dc,0,-3.3,0,4.6,1.0,3.4); blk(0xbfb2e0,0,-4.1,0,2.4,0.8,1.8);
+// tiles
+for(let x=-3.5;x<=3.5;x++)for(let z=-2.5;z<=2.5;z++){const m=add(B,lam((x+z)%2?0xfaf1e6:0xf3e7d9),x,-0.04,z,0.96,0.08,0.96)}
+// tower
+blk(STONE,2.2,0,-1.3,2,4.6,2); blk(0xfbf3ea,2.2,4.6,-1.3,2.4,0.25,2.4);
+add(new THREE.SphereGeometry(0.85,14,7,0,Math.PI*2,0,Math.PI/2),lam(0x8b84d4),2.2,4.85,-1.3);
+add(new THREE.ConeGeometry(0.07,0.8,6),lam(0xf2b84b),2.2,6.1,-1.3);
+blk(0x4a4378,2.2,0,-0.28,0.7,1.5,0.1); add(new THREE.CylinderGeometry(0.35,0.35,0.1,12,1,false,0,Math.PI),lam(0x4a4378),2.2,1.5,-0.27).rotation.set(Math.PI/2,0,Math.PI/2*0);
+for(let k=0;k<3;k++) blk(0x8b84d4,3.21,1.6+k*0.9,-1.3+(k-1)*0.55,0.04,0.45,0.22);
+// stair tower: platform + steps (duck path)
+blk(STONE,-0.6,0,-1.8,1.8,2.5,1.8); blk(0xfbf3ea,-0.6,2.5,-1.8,2.0,0.18,2.0);
+const steps=[]; for(let k=0;k<5;k++){const h=0.5*(k+1); blk(0xf6ead9,-0.6+(k-5)*0+0,0,0.4-k*0.0,1,h,1); }
+// rebuild steps along x toward platform
+sc.children.slice(-5).forEach(o=>sc.remove(o));
+for(let k=0;k<5;k++){const h=0.45*(k+1); const x=-3.4+k*0.62; blk(0xf6ead9,x,0,-1.8,0.62,h,1.2); steps.push([x,h,-1.8]);}
+steps.push([-0.6,2.68,-1.8]);
+// coral + mint + trees
+blk(0xef8a7c,-2.4,0,1.4,2,0.9,1.8); blk(lighten(0xef8a7c,0.25),-2.4,0.9,1.4,1.2,0.7,1.0);
+blk(0x7cc7c1,0.9,0,1.6,0.9,2.2,0.9); blk(lighten(0x7cc7c1,0.3),0.9,2.2,1.6,1.3,0.22,1.3);
+function tree(x,z,c){add(new THREE.CylinderGeometry(0.06,0.08,0.35,5),lam(0xc8a98f),x,0.17,z);add(new THREE.ConeGeometry(0.34,0.85,6),lam(c),x,0.72,z);add(new THREE.ConeGeometry(0.25,0.6,6),lam(lighten(c,0.25)),x,1.1,z)}
+tree(3.4,2.2,0x9ad0a8); tree(-3.4,2.3,0x86cbc4); tree(3.5,0.9,0x86cbc4);
+// duck
+function makeDuck(){const d=new THREE.Group(),cream=lam(0xfff8ee),coral=lam(0xef8a7c),dark=lam(0x2f2a55),mint=lam(0x5fb8b0);
+ add(new THREE.SphereGeometry(0.27,12,9),cream,0,0.43,0,1,0.82,1.15,d); add(new THREE.SphereGeometry(0.17,12,9),cream,0,0.74,0.15,1,1,1,d);
+ add(new THREE.ConeGeometry(0.07,0.2,6),coral,0,0.71,0.36,1,1,1,d).rotation.x=Math.PI/2;
+ [-1,1].forEach(s=>add(new THREE.SphereGeometry(0.028,6,5),dark,s*0.075,0.78,0.29,1,1,1,d));
+ add(new THREE.ConeGeometry(0.09,0.2,5),cream,0,0.52,-0.32,1,1,1,d).rotation.x=-Math.PI/2.6;
+ add(new THREE.CylinderGeometry(0.012,0.012,0.18,4),dark,0.05,0.97,0.1,1,1,1,d);
+ const bulb=add(new THREE.SphereGeometry(0.04,6,5),lam(0xf2a7c3,{emissive:0xf06d9c,emissiveIntensity:0.5}),0.05,1.07,0.1,1,1,1,d);
+ const legs=[-1,1].map(s=>{const g=new THREE.Group();g.position.set(s*0.1,0.24,0);add(new THREE.CylinderGeometry(0.03,0.03,0.22,5),mint,0,-0.11,0,1,1,1,g);add(B,coral,0,-0.22,0.05,0.1,0.035,0.16,g);d.add(g);return g});
+ d.userData={legs,bulb}; d.scale.setScalar(1.25); sc.add(d); return d}
+const duck=makeDuck();
+const path=[[-4.3,0,-1.8],...steps]; const N=path.length; const route=[...path,...path.slice(0,-1).reverse()];
+// clouds
+const clouds=[]; const cm=lam(0xffffff,{transparent:true,opacity:0.95});
+[[-1,5.5,-7,1],[6.5,3.2,-4,0.8],[-5.5,-2.6,5,0.7],[7.4,-1.2,3.5,0.6]].forEach(([x,y,z,s],i)=>{const g=new THREE.Group();
+ for(let j=0;j<4;j++){const m=new THREE.Mesh(new THREE.IcosahedronGeometry(0.55+((i+j)%3)*0.18,0),cm);m.position.set(j*0.75-1.1,((j*7)%3)*0.12,(j%2)*0.4);m.scale.y=0.72;m.castShadow=false;g.add(m)}
+ g.scale.setScalar(s); g.userData={x,y,z}; sc.add(g); clouds.push(g)});
+function at(t){
+  const T=t%LOOP, n=route.length-1, ph=T/LOOP*n, i=Math.floor(ph), s=ph-i;
+  const a=route[i], b=route[i+1]; const dy=Math.abs(b[1]-a[1]);
+  duck.position.set(a[0]+(b[0]-a[0])*s, a[1]+(b[1]-a[1])*s+Math.sin(Math.PI*s)*(0.28+dy*0.5), a[2]+(b[2]-a[2])*s);
+  duck.rotation.y=Math.atan2(b[0]-a[0],b[2]-a[2]||0.0001);
+  duck.userData.legs.forEach((l,k)=>l.rotation.x=Math.sin(s*Math.PI*2+(k?Math.PI:0))*0.7);
+  duck.userData.bulb.material.emissiveIntensity=0.35+Math.sin(T/LOOP*Math.PI*6)*0.25;
+  clouds.forEach((c,k)=>{const d=c.userData; c.position.set(d.x+Math.sin(T/LOOP*Math.PI*2+k)*0.35,d.y,d.z)});
+  r.render(sc,cam);
+}
+window.__b={loop:LOOP,at}; at(0);
+
+
+(async()=>{
+  try{const d=await (await fetch('data.json',{cache:'no-store'})).json(); const C=d.counts;
+    let st=0,cur=0; for(const c of C){cur=c>0?cur+1:0; st=Math.max(st,cur)}
+    const tot=C.reduce((a,b)=>a+b,0), act=C.filter(c=>c>0).length, best=Math.max(...C);
+    document.getElementById('stats').innerHTML=[[tot.toLocaleString(),'contributions','--coral'],[act,'active days','--teal'],[best,'best single day','--gold'],[st+' days','longest streak','--lilac']]
+      .map(([v,l,c])=>`<div class="stat"><b style="color:var(${c})">${v}</b><span>${l}</span></div>`).join('');
+  }catch(e){document.getElementById('stats').closest('.wrap').querySelector('#stats').remove()}
+  await document.fonts.ready; at(0); window.__b.ready=true;
+})();
+</script></body></html>
