@@ -1,0 +1,59 @@
+name: contribution valley
+
+on:
+  schedule:
+    - cron: "23 7 * * *"     # daily, about 3am New York time
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: fetch contributions
+        run: node scripts/fetch-contributions.mjs
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          # add a CONTRIB_TOKEN secret (classic PAT, read:user) to include private contributions
+          GH_TOKEN: ${{ secrets.CONTRIB_TOKEN || github.token }}
+
+      - name: render looping previews
+        continue-on-error: true   # if this fails, the committed preview.webp are used
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          npm install --no-save playwright@1.47.2
+          npx playwright install --with-deps chromium
+          node scripts/capture-preview.mjs
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
