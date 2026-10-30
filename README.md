@@ -57,19 +57,3 @@
   <br />
   <sub>my last year of commits as a tiny 3D world. <a href="https://tobbs2005.github.io/Tobbs2005/">click to walk the duck around</a> and collect the busiest days.</sub>
 </p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Tobbs2005/Tobbs2005/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Tobbs2005/Tobbs2005/output/snake-light.svg" />
-    <img alt="snake eating my contribution graph" src="https://raw.githubusercontent.com/Tobbs2005/Tobbs2005/output/snake-dark.svg" width="100%" />
-  </picture>
-</p>
-
-<p align="center">
-  <img src="./assets/duck.svg" width="100%" alt="a little bipedal duck robot waddling across" />
-</p>
-
-<p align="center">
-  <img src="https://ghchart.rshah.org/2bb8a3/Tobbs2005" width="100%" alt="Toby's GitHub contribution chart" />
-</p>
