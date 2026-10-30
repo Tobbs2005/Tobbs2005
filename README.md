@@ -8,11 +8,3 @@
   <a href="mailto:ziyue.fang@columbia.edu">ziyue.fang@columbia.edu</a> ·
   <a href="https://tobbs2005.github.io/Tobbs2005/">play Contribution Valley</a>
 </p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Tobbs2005/Tobbs2005/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Tobbs2005/Tobbs2005/output/snake-light.svg" />
-    <img alt="a snake eating my contribution graph" src="https://raw.githubusercontent.com/Tobbs2005/Tobbs2005/output/snake-light.svg" width="100%" />
-  </picture>
-</p>
