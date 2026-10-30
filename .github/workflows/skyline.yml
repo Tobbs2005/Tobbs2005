@@ -1,8 +1,7 @@
 name: skyline
 
+# retired: the README no longer has a 3D skyline. Kept for manual use only.
 on:
-  schedule:
-    - cron: "41 7 * * *"     # daily, after the valley refresh
   workflow_dispatch:
 
 permissions:

@@ -41,6 +41,7 @@ jobs:
           npm install --no-save playwright@1.47.2
           npx playwright install --with-deps chromium
           node scripts/capture-preview.mjs
+          node scripts/capture-profile.mjs
 
       - uses: actions/configure-pages@v5
 
